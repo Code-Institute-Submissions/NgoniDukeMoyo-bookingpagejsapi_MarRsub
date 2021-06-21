@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" type="text/css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" type="text/css">
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <script src="./apimaps.js"></script>
+
   <script type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
 </script>
@@ -104,15 +107,12 @@
 </div>
  </section>
  
-
-
 <footer class="footernav">
     <div class="main-content">
         <div class="left-box box">
-            <h5>Inside Peak</h5>
+            <h5>Our Community</h5>
             <div class="content">
-                <p>Come experience simplicity at its most modern and comfortable state. Nature brought in the comfort of this living space. An understanding space of both a state of relaxation and traquality.
-                   Visit our socials to see and read from those who have had the journey with us.</p>
+               <id="map"></id>
                 <div id="social">
                     <a href="https://www.facebook.com/" target="_blank"><span class="fab fa-facebook"></span></a>
                     <a href="https://www.instagram.com/" target="_blank"><span class="fab fa-instagram"></span></a>
@@ -172,5 +172,8 @@
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"> </script>
     <script> src="assets/js/sendEmail.js"</script>
+    <script src="assets/js/apimaps.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDKk6sTxq7G8W-A8upY7a5szx-MtI-kKAY&callback=initMap&libraries=&v=weekly"
+      async></script>
 </body>
 </html>

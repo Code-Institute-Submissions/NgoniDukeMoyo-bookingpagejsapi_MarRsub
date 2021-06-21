@@ -542,6 +542,12 @@ p{
     filter: drop-shadow(0) brightness(1);
 }
 
+/*------------------js maps*/
+#map {
+  height: 100%;
+}
+
+
 /*------------------Gallery media query*/
 
 @media only screen and (max-width: 800px){
