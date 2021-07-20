@@ -67,6 +67,21 @@ a:link{
     margin: 0;
 }
 
+/*------------------The gezellig living description
+.description-container{
+    margin: 50px;
+    display: flex;
+}
+.description{
+    width: 50%;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    border-radius: 8px;
+}
+•/
 /*------------------Main Content home*/
 
 .homebodysection{
