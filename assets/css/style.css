@@ -11,22 +11,11 @@
 }
 
 /*------------------Nav Bar home*/
-
-.span1{
-    color: #FFBF00;
-    padding: 2px;
-    margin: 10px;
-}
 .span2{
     color: #c46210;
     padding: 2px;
     margin: 10px;
     
-}
-.span3{
-    color: teal;
-    padding: 2px;
-    margin: 10px;
 }
 
 li i{
@@ -36,9 +25,7 @@ li i{
 a:link{
     text-decoration: none;
 }
-
-
-   
+  
 /*------------------general*/
 
 .sub-heading{
@@ -53,12 +40,6 @@ a:link{
     color:teal;
 }
 
-.gallerysub-heading{
-    font-family: "Exo", sans-serif;
-    font-weight: 300;
-    color: maroon;
-}
-
 .inline-block{
     display: inline-block;
 }
@@ -68,77 +49,10 @@ a:link{
     margin: 0;
 }
 
-/*------------------The gezellig living description
-.div{
-    margin: 10px;
-    padding: 3px;
-    border-style: none; */
-
 /*------------------Main Content home*/
-
-.homebodysection{
-    display: block;
-    background-image: url(../images/fronthomeinside.JPG);
-    background-position: center center;
-    overflow: hidden;
-
-}
-
-.homeimagesection,
-.contectsection,
-.videosection{
-    box-sizing: border-box;
-    border: 1px transparent teal;
-    padding: 5px;
-}
-
-.contectsection, p{
-color: 	#FFf;
-font-weight: bold;
-
-}
-
 .cover-image {
     max-height: 50vh;
-    /* todo: center */
 }
-
-.videocontainer{
-    float: right;
-    width: 500px;
-}
-
-video{
-    width: 100%;
-}
-
-.clear{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-
-.firstsection{
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font-family: "Exo", sans-serif;
-    text-align: right;
-}
-
-.house-front{
-    border-radius: 15%;
-    height: 250px;
-    margin: 10px;
-}
-
-.homemainhead{
-    font-family: "Exo", sans-serif;
-    font-weight: 300;
-    color: maroon;
-    text-align: center;
-}
-
 /*------------------profile Card*/
 
 .profile{
@@ -150,20 +64,6 @@ video{
     float: right;
     height: 250px;
     margin: 10px;
-}
-
-.profile-image{
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 50%;
-    margin: 0 auto 20px auto;
-    display: block;
-}
-
-.profile-name{
-    font-size: 1.2em;
-    font-weight: bold;
 }
 
 /*------------------Home map*/
