@@ -182,7 +182,6 @@
                 </div>
             </div>
             <div class="bottom">
-                <!-- TODO: Change center to a css solution -->
                 <center>
                     <span class="credit">Created By <a href="#">Duke Moyo</a> | </span>
                     <span class="far fa-copyright"></span><span>2021 all rights reserved.</span>
@@ -190,6 +189,30 @@
             </div>
         </footer>
         <script>
+            /*contact form*/
+            var form = document.getElementById("my-form");
+    
+            async function handleSubmit(event) {
+                            event.preventDefault();
+            var status = document.getElementById("status");
+            var data = new FormData(event.target);
+                fetch(event.target.action, {
+                     method: form.method,
+                    body: data,
+                    headers: {
+                     'Accept': 'application/json'
+                    }
+                }).then(response => {
+                    status.innerHTML = "Thanks for your submission!";
+                    form.reset()
+                 }).catch(error => {
+                    status.innerHTML = "Oops! There was a problem submitting your form"
+                 });
+                 }
+                    form.addEventListener("submit", handleSubmit);
+            
+
+            /*map api*/
             function initMap() {
                 //map options
                 var options = {
@@ -272,7 +295,7 @@
             }
         </script>
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDKrXSCmM9KvLRhz5STL3187zLYInobP5Y&callback=initMap&libraries=&v=weekly" async></script>
-        <script src="./assets/js/emailjsformspree.js"></script>
+        <script src="assets/js/emailjsformspree.js"></script>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
     </body>
