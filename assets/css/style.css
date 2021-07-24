@@ -67,14 +67,12 @@ a:link{
     margin: 10px;
 }
 
-/*------------------Home map*/
-iframe{
-    position: flex;
-    right: 1000px;
-    margin: 15px;
-    padding: 0px;
-
+/*------------------JS map*/
+#map {
+    height: 200px;
+    width: 100%;
 }
+
 /*------------------footer*/
 
 .footernav {
@@ -185,7 +183,7 @@ iframe{
 
 .right-box form .text{
     font-size: 1.0625rem;
-    margin-bottom: 2ppx;
+    margin-bottom: 2px;
     color: #fff;
 }
 
@@ -252,7 +250,35 @@ iframe{
 .bottom center a:hover{
     text-decoration: underline;
 }
+/*------------------Desscription*/
 
+.tdiv{
+    padding: 10px;
+    margin: 3px;
+    border-style: none;
+}
+
+.discriptionsheading{
+    text-transform: none;
+    font-family: "Exo",sans-serif;
+    font-weight: 300;
+    color: teal;
+}
+
+.discriptions{
+    color: #000;
+    font-family: "Exo", sans-serif;
+    text-transform:none;
+    font-weight: 400;
+}
+
+.iconurl{
+    color: black;
+}
+
+#infowindow{
+    background-color: black;
+}
 /*------------------Booking*/
 
 .bookingbody{
@@ -404,11 +430,4 @@ iframe{
 
 #submit-btn:hover{
     background: #FFBF00;
-
-
-
-
-
-
-
-
+}

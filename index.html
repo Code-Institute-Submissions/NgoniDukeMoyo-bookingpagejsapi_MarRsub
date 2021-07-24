@@ -2,48 +2,14 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <title>Gezellig Living</title>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" type="text/css" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" type="text/css" />
-        <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-        <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
-        <title>Gezellig Living</title>
-        <style>
-            #map {
-                height: 200px;
-                width: 100%;
-            }
-
-            .tdiv{
-                padding: 10px;
-                margin: 3px;
-                border-style: none;
-            }
-
-            .discriptionsheading{
-                text-transform: none;
-                font-family: "Exo",sans-serif;
-                font-weight: 300;
-                color: teal;
-            }
-
-            .discriptions{
-                color: #000;
-                font-family: "Exo", sans-serif;
-                text-transform:none;
-                font-weight: 400;
-            }
-
-            .iconurl{
-                color: black;
-            }
-
-            #infowindow{
-                background-color: black;
-            }
-        </style>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" type="text/css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" type="text/css"/>
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
     </head>
+
     <body>
         <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
             <a class="navbar-brand" href="home.html">
@@ -175,7 +141,7 @@
                             </div>
                             <div class="btn">
                                 <button type="submit" aria-label="button">send</button>
-                                <div id="status">Status</div>
+                                <!--<div id="status">Thanks</div>-->
                             </div>
                         </form>
                     </div>
@@ -188,116 +154,11 @@
                 </center>
             </div>
         </footer>
-         
-        <script>
-            /*contact form*/
-            var form = document.getElementById("my-form");
-    
-            async function handleSubmit(event) {
-                            event.preventDefault();
-            var status = document.getElementById("status");
-            var data = new FormData(event.target);
-                fetch(event.target.action, {
-                     method: form.method,
-                    body: data,
-                    headers: {
-                     'Accept': 'application/json'
-                    }
-                }).then(response => {
-                    status.innerHTML = "Thanks for your submission!";
-                    form.reset()
-                 }).catch(error => {
-                    status.innerHTML = "Oops! There was a problem submitting your form"
-                 });
-                 }
-                    form.addEventListener("submit", handleSubmit);
-            
-
-            /*map api*/
-            function initMap() {
-                //map options
-                var options = {
-                    zoom: 10,
-                    center: {
-                        lat: 52.63595,
-                        lng: 4.73622,
-                    },
-                };
-
-                //new map
-                var map = new google.maps.Map(document.getElementById("map"), options);
-
-                //duke attempt map
-                var marker = addMarker({
-                    coods: {
-                        lat: 52.63595,
-                        lng: 4.73622,
-                    },
-                    iconImage: "http://maps.google.com/mapfiles/kml/pal3/icon48.png",
-                    infoText: "<p> url: https://www.airbnb.com/rooms/36616246?translate_ugc=false&federated_search_id=bf8cacc9-3df5-4805-bb09-255765468282&source_impression_id=p3_1627050299_2WskDflabalWA29%2B&guests=1&adults=1 </p>",
-                });
-
-                var marker2 = addMarker({
-                    coods: {
-                        lat: 52.63657,
-                        lng: 4.75619,
-                    },
-                    iconImage: "http://maps.google.com/mapfiles/kml/pal3/icon48.png",
-                    infoText: "<p> url: https://www.airbnb.com/rooms/43590586?translate_ugc=true&federated_search_id=bf8cacc9-3df5-4805-bb09-255765468282&source_impression_id=p3_1627050148_EbY041kBbAXwQiW2&guests=1&adults=1 </p>",
-                });
-
-                var marker3 = addMarker({
-                    coods: {
-                        lat: 52.6378,
-                        lng: 4.7408,
-                    },
-                    iconImage: "http://maps.google.com/mapfiles/kml/pal3/icon48.png",
-                    infoText: "<p> url: https://www.airbnb.com/rooms/50113014?translate_ugc=true&federated_search_id=bf8cacc9-3df5-4805-bb09-255765468282&source_impression_id=p3_1627050215_HMdYkj3m1L%2F8Ucei&guests=1&adults=1 </p>",
-                });
-
-                var marker4 = addMarker({
-                    coods: {
-                        lat: 52.6438,
-                        lng: 4.7638,
-                    },
-                    iconImage: "http://maps.google.com/mapfiles/kml/pal3/icon48.png",
-                    infoText: "<p> url: https://www.airbnb.com/rooms/9866644?translate_ugc=false&federated_search_id=bf8cacc9-3df5-4805-bb09-255765468282&source_impression_id=p3_1627050257_nWq5OAljXe90z%2BtC&guests=1&adults=1 </p>",
-                });
-
-                var marker5 = addMarker({
-                    coods: {
-                        lat: 52.6373,
-                        lng: 4.7527,
-                    },
-                    iconImage: "http://maps.google.com/mapfiles/kml/pal3/icon48.png",
-                    infoText: "<p> url: https://www.airbnb.com/rooms/36616246?translate_ugc=false&federated_search_id=bf8cacc9-3df5-4805-bb09-255765468282&source_impression_id=p3_1627050299_2WskDflabalWA29%2B&guests=1&adults=1 </p>",
-                });
-
-
-
-                //duke attempt marker function
-                function addMarker(props) {
-                    var marker = new google.maps.Marker({
-                        position: props.coods,
-                        map: map,
-                        icon: props.iconImage,
-                    });
-
-                    var infoWindow = new google.maps.InfoWindow({
-                        content: props.infoText,
-                    });
-
-                    marker.addListener("click", function () {
-                        infoWindow.open(map, marker);
-                    });
-
-                    return marker;
-                }
-            }
-        </script>
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDKrXSCmM9KvLRhz5STL3187zLYInobP5Y&callback=initMap&libraries=&v=weekly" async></script>
-        <script src="assets/js/emailjsformspree.js"></script>
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=default" ></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDKrXSCmM9KvLRhz5STL3187zLYInobP5Y&callback=initMap&libraries=&v=weekly" async ></script>
+        <script src="assets/js/emailjsformspree.js" ></script>
+        <script src="assets/js/mapsapi.js" ></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous" ></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" ></script>
     </body>
 </html>
