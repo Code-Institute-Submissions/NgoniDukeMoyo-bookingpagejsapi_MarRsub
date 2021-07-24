@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700|font-display: swap;');
 
 .mainpiccontainer{
     margin: 50px;
@@ -52,6 +52,7 @@ a:link{
 /*------------------Main Content home*/
 .cover-image {
     max-height: 50vh;
+    width: 100vh;
 }
 /*------------------profile Card*/
 
