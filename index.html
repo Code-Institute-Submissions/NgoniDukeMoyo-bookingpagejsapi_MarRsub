@@ -37,7 +37,6 @@
                 font-family: "Exo", sans-serif;
                 text-transform:none;
                 font-weight: 400;
-
             }
 
             .iconurl{
@@ -54,10 +53,10 @@
             <a class="navbar-brand" href="home.html">
                 <h2 class="nav-heading">Gezellig</h2>
             </a>
-            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#collapse_target">
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#collapse_target" aria-label="collapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="collapse_target">
+            <div class="collapse navbar-collapse" id="collapse_target" aria-label="list items">
                 <ul class="nav navbar-nav">
                     <li class="nav-item uppercase">
                         <a href="booking.html">
@@ -67,21 +66,22 @@
                     
             </div>
         </nav>
+
         <section class="mainpic">
-            <div class="mainpiccontainer">
-                <img src="assets/images/mlogo.JPG" alt="livingroom" class="img-fluid cover-image" />
+             <div class="mainpiccontainer">
+                <img src="assets/images/mlogo.JPG" alt="livingroom" class="img-fluid cover-image"  aria-label="cover image"/>
                 <div class="discriptionsheading tdiv"><h1>The Gezellig Living Space</h1><p class="discriptions">Enjoy the elegance of a by-gone era while staying in this Art Deco home. 
                     Beautifully decorated and featuring a sweeping staircase, original stained-glass windows, 
                     period furniture, and a stunningly unique green and maroon tiled bathroom.<br><br> With a multi-cultural couple owners, you will indulge in a multi-cultural deco comfort of
                     both the European and African style interior decoration. Whether you a adventures booker lover, an art enthusiast, nature love and someone who has an appriciation for authenticity, this space will 
-                    make sure that you are well covered.<br><br>Does this space sounds like it is for you? Then book your time with us below!!!</p></div>
+                    make sure that you are well covered.<br><br>Does this space sounds like it is for you? Then book your time with us below!!!</p>
+                </div>
             </div>
-
-        </section>
-        <section class="bookingbody">
-            <div class="container">
+       </section>
+       
+    <section class="bookingbody">
                 <!--create a form spree form todo:required (check not empty) and use correct data(like mail checks for @) fix submit --> 
-        <form action="https://formspree.io/f/xoqynyjn" method="POST" id="my-form"> 
+        <form action="https://formspree.io/f/xoqynyjn" method="POST" id="my-form" class="col"> 
                 <div class="form-group">
                     <div id="form">
                         <h1 class="text-white text-center">Book Your Stay</h1>
@@ -122,10 +122,11 @@
                         <button type="submit" value="submit" id="submit-btn">Book Here</button>
                         <div id="status">Status</div>
                     </div>
-                </div>
-            </div>
+                </div>   
         </form> 
-        </section>
+    </div>
+    </div>
+    </section>
         <!-- TODO: Use bootstrap for three columns to make it responsive. -->
         <footer class="footernav">
             <div class="main-content">
@@ -134,9 +135,9 @@
                     <div class="content">
                         <div id="map"></div>
                         <div id="social">
-                            <a href="https://www.facebook.com/" target="_blank"><span class="fab fa-facebook"></span></a>
-                            <a href="https://www.instagram.com/" target="_blank"><span class="fab fa-instagram"></span></a>
-                            <a href="https://www.youtube.com/" target="_blank"><span class="fab fa-youtube"></span></a>
+                            <a href="https://www.facebook.com/" target="_blank" aria-label="link"><span class="fab fa-facebook"></span></a>
+                            <a href="https://www.instagram.com/" target="_blank" aria-label="link"><span class="fab fa-instagram"></span></a>
+                            <a href="https://www.youtube.com/" target="_blank" aria-label="link"><span class="fab fa-youtube"></span></a>
                         </div>
                     </div>
                 </div>
@@ -161,20 +162,27 @@
                     <h5>Reach to us</h5>
                     <div class="content">
                         <form action="https://formspree.io/f/xvodbqgg" method="POST" id="my-form">
-                            <div class="name">
-                                <div class="text">Name</div>
+                            <!--<div class="name">
+                                <div class="text">Name</div>-->
+                                <label>Name
                                 <input type="text" id="first_Name" name="first_Name" required />
-                            </div>
-                            <div class="email">
-                                <div class="text">Email</div>
+                                </label>
+                            <!--</div>-->
+
+                            <!--<div class="email">
+                                <div class="text">Email</div>-->
+                                <label>Email
                                 <input type="email" id="email_Address" name="email_Address" required />
-                            </div>
+                                </label>
+                            <!--</div>-->
                             <div class="msg">
-                                <div class="text">Message</div>
+                                <!--<div class="text">Message</div>-->
+                                <label>Message
                                 <textarea name="message" id="message" rows="2" cols="30" required></textarea>
+                                </label>
                             </div>
                             <div class="btn">
-                                <button type="submit">send</button>
+                                <button type="submit" aria-label="button">send</button>
                                 <div id="status">Status</div>
                             </div>
                         </form>
@@ -188,6 +196,7 @@
                 </center>
             </div>
         </footer>
+         
         <script>
             /*contact form*/
             var form = document.getElementById("my-form");
