@@ -297,10 +297,10 @@ a:link{
     opacity: 0.7;
 }
 
-#first-group{
+#first-group {
     border: none;
     width: 480px;
-    margin-top: 38px;
+    /* margin-top: 38px; */
     position: absolute;
 }
 
@@ -409,11 +409,12 @@ a:link{
     margin-left: 8px;
 }
 
-#second-group{
+#second-group {
     border: none;
     width: 480px;
-    margin-top: 55px;
+    /* margin-top: 55px; */
     margin-left: 400px;
+    position: absolute;
 }
 
 #submit-btn{
