@@ -30,11 +30,11 @@
                 </li>
         </div>
     </nav>
-    <section class="mainpic">
-        <div class="mainpiccontainer">
-            <img src="assets/images/mlogo.JPG" alt="livingroom" class="img-fluid cover-image"
+    <section class="mainpic container">
+        <div class="mainpiccontainer row">
+            <img src="assets/images/mlogo.JPG" alt="livingroom" class="img-fluid col-6 cover-image"
                 aria-label="cover image" />
-            <div class="discriptionsheading tdiv">
+            <div class="discriptionsheading tdiv col-6">
 
                 <!------>
                 <h1>The Gezellig Living Space</h1>
@@ -51,16 +51,16 @@
         </div>
     </section>
 
-    <section class="bookingbody">
+    <section class="bookingbody container">
         <form action="https://formspree.io/f/xoqynyjn" method="POST" id="my-form">
-            <div class="form-group">
-                <div id="form">
+            <div class="form-group" >
+                <div id="form" class="row">
                     <h1 class="text-white text-center">Book Your Stay</h1>
                     <h3 class="text-white text-center">€100pp</h3>
 
                     <!--<div class="container">
                     <div class="row align-items-start"> -->
-                    <div id="first-group">
+                    <div class="col-6">
                         <div id="bookingcontent1" class="">
                             <label>
                                 <i class="fas fa-user icons" aria-hidden="true"></i>
@@ -70,7 +70,7 @@
                         <div id="bookingcontent2" class="">
                             <label>
                                 <i class="fas fa-mobile-alt icons" aria-hidden="true"></i>
-                                <input type="tel" id="input-group2" placeholder="Phone number"required/>
+                                <input type="tel" id="input-group2" placeholder="Phone number" pattern="[0-9]{10}" required/>
                             </label>
                         </div>
                         <div id="bookingcontent3" class="">
@@ -93,7 +93,7 @@
 
                     <!-- <div class="container">
                     <div class="row align-items-start">-->
-                    <div id="second-group" class="">
+                    <div  class="col-6">
                         <div id="bookingcontent4" class="">
                             <label>
                                 <i class="fas fa-user icons" aria-hidden="true"></i>
