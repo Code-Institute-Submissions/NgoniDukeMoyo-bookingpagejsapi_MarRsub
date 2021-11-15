@@ -19,7 +19,7 @@ function initMap() {
             lng: 4.73622,
         },
         iconImage: "http://maps.google.com/mapfiles/kml/pal3/icon48.png",
-        infoText: " <a href='https://www.airbnb.com/rooms/36616246?translate_ugc=false&federated_search_id=bf8cacc9-3df5-4805-bb09-255765468282&source_impression_id=p3_1627050299_2WskDflabalWA29%2B&guests=1&adults=1'>Home1</a>",
+        infoText: " <a href='https://www.airbnb.com/rooms/29029231?adults=2&check_in=2021-11-17&check_out=2021-12-08&federated_search_id=b6df54fd-c709-46e6-a977-5d050010486c&source_impression_id=p3_1637015701_%2BQ%2FWoWZbXtyBkv0z&guests=1' target='_blank'>Home1</a>",
     },
   
     {
@@ -28,7 +28,7 @@ function initMap() {
             lng: 4.75619,
         },
         iconImage: "http://maps.google.com/mapfiles/kml/pal3/icon48.png",
-        infoText: "<p> url: https://www.airbnb.com/rooms/43590586?translate_ugc=true&federated_search_id=bf8cacc9-3df5-4805-bb09-255765468282&source_impression_id=p3_1627050148_EbY041kBbAXwQiW2&guests=1&adults=1 </p>",
+        infoText: "<a href=' https://www.airbnb.com/rooms/43871050?adults=2&check_in=2021-11-17&check_out=2021-12-08&federated_search_id=b6df54fd-c709-46e6-a977-5d050010486c&source_impression_id=p3_1637015801_q%2F9xqeYFp%2BnR8Zy9&guests=1' target='_blank'>Home2</a>",
     },
   
     {
@@ -37,7 +37,7 @@ function initMap() {
             lng: 4.7408,
         },
         iconImage: "http://maps.google.com/mapfiles/kml/pal3/icon48.png",
-        infoText: "<p> url: https://www.airbnb.com/rooms/50113014?translate_ugc=true&federated_search_id=bf8cacc9-3df5-4805-bb09-255765468282&source_impression_id=p3_1627050215_HMdYkj3m1L%2F8Ucei&guests=1&adults=1 </p>",
+        infoText: "<a href=' https://www.airbnb.com/rooms/31505855?adults=2&check_in=2021-11-17&check_out=2021-12-08&federated_search_id=b6df54fd-c709-46e6-a977-5d050010486c&source_impression_id=p3_1637015838_7S3ZtgMpt8dczqIx&guests=1' target='_blank'>Home3</a>",
     },
   
     {
@@ -46,7 +46,7 @@ function initMap() {
             lng: 4.7638,
         },
         iconImage: "http://maps.google.com/mapfiles/kml/pal3/icon48.png",
-        infoText: "<p> url: https://www.airbnb.com/rooms/9866644?translate_ugc=false&federated_search_id=bf8cacc9-3df5-4805-bb09-255765468282&source_impression_id=p3_1627050257_nWq5OAljXe90z%2BtC&guests=1&adults=1 </p>",
+        infoText: "<a href=' https://www.airbnb.com/rooms/13454757?adults=2&check_in=2021-11-17&check_out=2021-12-08&federated_search_id=b6df54fd-c709-46e6-a977-5d050010486c&source_impression_id=p3_1637015884_HDjAb2iFk%2BPRA%2FeX&guests=1' target='_blank'>Home4</a>",
     },
   
     {
@@ -55,7 +55,7 @@ function initMap() {
             lng: 4.7527,
         },
         iconImage: "http://maps.google.com/mapfiles/kml/pal3/icon48.png",
-        infoText: "<p> url: https://www.airbnb.com/rooms/36616246?translate_ugc=false&federated_search_id=bf8cacc9-3df5-4805-bb09-255765468282&source_impression_id=p3_1627050299_2WskDflabalWA29%2B&guests=1&adults=1 </p>",
+        infoText: "<a href=' https://www.airbnb.com/rooms/43563011?adults=2&check_in=2021-11-17&check_out=2021-12-08&federated_search_id=b6df54fd-c709-46e6-a977-5d050010486c&source_impression_id=p3_1637015912_R5KtSt1Q4sONQ1QA&guests=1' target='_blank'>Home5</a>",
     }];
   
     markers.forEach(element=>addMarker(element));

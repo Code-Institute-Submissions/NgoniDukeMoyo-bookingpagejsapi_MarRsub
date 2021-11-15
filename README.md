@@ -103,6 +103,28 @@ The header and navbar provide clear and simple info to make it as quick and easy
 -The site was views on mobile and large screen devices<br>
 -Alot of test done to ensure that all pages were linking correctly<br>
 
+# Functional Testing
+1. The site performs according to the requirement in all versions ( nav-bar, forms and scroll and links all functional).
+2. The installation of the project can be done smoothly provided the user has the necessary resources and it does not lead to any significant errors (gitphun repo cloning).
+3. The navigation between relevant modules in on the site are as per the requirement (bootstrap nav-bar and toggle is fully functional).
+4. The site allows necessary social network options such as sharing, posting and navigation etc (throough footer socials).
+
+# Performance Testing Test Cases
+1. The various site and infrastructure bottlenecks which prevent the site to perform at the required acceptability levels has been accessed (boostrap grids are functional).
+2. The response time of the site is as per as the requirements.
+
+# Usability Testing Test Cases
+1. The icons are natural and consistent with the site.
+2. The buttons, which have the same function have the same color.
+3. The text is kept simple and clear to be visible to the users.
+
+
+# Compatibility Testing
+1. The user Interface of the site is as per the screen size of the device, no text/control is partially invisible or inaccessible.
+
+# Browser Testing
+1. Chrome Version 95.0.4638.69 (Official Build) (x86_64)
+
 
 # Bugs
 -Devices view<br>
@@ -117,6 +139,15 @@ The header and navbar provide clear and simple info to make it as quick and easy
 .Scroll down to pages section<br>
 .under source click the dropdown named "none" and select "Master Branch"<br>
 .Scroll down through the page to find the now published link in GitHub pages section.<br>
+
+## Clone Project
+1. On my repos, navigate to the main page of the repository.<br>
+2. Above the list of files, click  Code.<br>
+3. To clone the repository using HTTPS, under "Clone with HTTPS", click the clipboard. To clone the repository using an SSH key, including a certificate issued by your organization's SSH certificate authority, click Use SSH, then click the clipboard. To clone a repository using GitHub CLI, click Use GitHub CLI, then click the clipboard.<br>
+4. Open Terminal.<br>
+5. Change the current working directory to the location where you want the cloned directory.<br>
+6. ype git clone, and then paste the URL you copied earlier.<br>
+7. Press Enter to create your local clone.<br>
 
 # Credits
 ## code

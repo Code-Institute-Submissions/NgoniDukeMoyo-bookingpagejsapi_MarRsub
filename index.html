@@ -30,13 +30,14 @@
                 </li>
         </div>
     </nav>
+    
     <section class="mainpic container">
         <div class="mainpiccontainer row">
             <img src="assets/images/mlogo.JPG" alt="livingroom" class="img-fluid col-6 cover-image"
                 aria-label="cover image" />
             <div class="discriptionsheading tdiv col-6">
 
-                <!------>
+                
                 <h1>The Gezellig Living Space</h1>
 
                 <p class="discriptions">Enjoy the elegance of a by-gone era while staying in this Art Deco home.
@@ -50,83 +51,64 @@
             </div>
         </div>
     </section>
-
+    
+    <!--bootstrap form-->
     <section class="bookingbody container">
-        <form action="https://formspree.io/f/xoqynyjn" method="POST" id="my-form">
-            <div class="form-group" >
-                <div id="form" class="row">
-                    <h1 class="text-white text-center">Book Your Stay</h1>
-                    <h3 class="text-white text-center">€100pp</h3>
+        <h1 class="text-white text-center">Book Your Stay</h1>
+        <h3 class="text-white text-center">€100pp</h3>
+    <form action="https://formspree.io/f/xoqynyjn" method="POST" id="my-form">
+        <div class="row ">
+          <div class="col-6">
+              <label>
+            <i class="fas fa-user icons" aria-hidden="true"></i>
+            <input type="text" class="form-control" placeholder="First name"required>
+          </div>
+        
+          <div class="col-6">
+              <label>
+            <i class="fas fa-user icons" aria-hidden="true"></i>
+            <input type="text" class="form-control" placeholder="Last name" required>
+          </div>
+        
+          <!--Second row -->
+          <div class="col-6">
+            <label>
+                <i class="fas fa-mobile-alt icons" aria-hidden="true"></i>
+          <input type="tel" class="form-control" placeholder="Phone number" required>
+        </div>
 
-                    <!--<div class="container">
-                    <div class="row align-items-start"> -->
-                    <div class="col-6">
-                        <div id="bookingcontent1" class="">
-                            <label>
-                                <i class="fas fa-user icons" aria-hidden="true"></i>
-                                <input type="text" id="input-group1" placeholder="First name" required/>
-                            </label>
-                        </div>
-                        <div id="bookingcontent2" class="">
-                            <label>
-                                <i class="fas fa-mobile-alt icons" aria-hidden="true"></i>
-                                <input type="tel" id="input-group2" placeholder="Phone number" pattern="[0-9]{10}" required/>
-                            </label>
-                        </div>
-                        <div id="bookingcontent3" class="">
-                            <label>
-                                <i class="far fa-calendar-alt icons" aria-hidden="true"></i>
-                                <label for="start">Check In</label>
-                                <input type="date" id="start" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31" required>
-                            </label>
+        <div class="col-6">
+            <label>
+            <i class="far fa-envelope icons" aria-hidden="true"></i>
+          <input type="email" class="form-control" placeholder="Email" required>
+        </div>
+        
+          <div class="col-6">
+            <label>
+            <i class="far fa-calendar-alt icons" aria-hidden="true"></i>
+            <input type="date" id="start" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31" required>
+            <label>
+                <i class="far fa-calendar-alt icons" aria-hidden="true"></i>
+                <input type="date" id="start" name="trip-start" value="2018-07-22" min="2018-01-01" max="2024-12-31" placeholder="Check In" required>
+            </label>
+          </div>
+        
+          <!--Third row-->
+          <div class="col-6">
+            <label>
+            <i class="fas fa-user icons" aria-hidden="true"></i>
+            <select id="input-group6" style="background-color: #fff;">
+                <option value="">No. of guests</option>
+                <option value="">1-2 persons</option>
+                <option value="">3-5 persons</option>
+                <option value="">6-10 persons</option>
+            </select>
+        </div>
 
-                            <label>
-                                <i class="far fa-calendar-alt icons" aria-hidden="true"></i>
-                                <label for="start">Check Out</label>
-                                <input type="date" id="start" name="trip-start" value="2018-07-22" min="2018-01-01" max="2024-12-31" placeholder="Check In" required>
-                            </label>
-                        </div>
-                    </div>
-                    <!--</div>
-                    </div>-->
-
-
-                    <!-- <div class="container">
-                    <div class="row align-items-start">-->
-                    <div  class="col-6">
-                        <div id="bookingcontent4" class="">
-                            <label>
-                                <i class="fas fa-user icons" aria-hidden="true"></i>
-                                <input type="text" id="input-group4" placeholder="Last Name" required/>
-                            </label>
-                        </div>
-                        <div id="bookingcontent5">
-                            <label>
-                                <i class="far fa-envelope icons" aria-hidden="true"></i>
-                                <input type="email" id="input-group5" placeholder="Email" required/>
-                            </label>
-                        </div>
-                        <div id="bookingcontent6">
-                            <label>
-                                <i class="fas fa-user icons" aria-hidden="true"></i>
-                                <select id="input-group6" style="background-color: #8b0000;">
-                                    <option value="">No. of guests</option>
-                                    <option value="">1-2 persons</option>
-                                    <option value="">3-5 persons</option>
-                                    <option value="">6-10 persons</option>
-                                </select>
-                            </label>
-                        </div>
-                        <button type="submit" value="submit" id="submit-btn">Book Here</button>
-                        <!---
-                            <div id="status">Status</div> -->
-                        <!--</div>
-                        </div>-->
-                    </div>
-                </div>
-            </div>
-        </form>
+        <button type="submit" class="btn btn-outline-warning">Submit</button>
+      </form>
     </section>
+
 
     <footer class="footernav">
         <div class="main-content">
