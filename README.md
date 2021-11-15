@@ -1,7 +1,8 @@
 <!--Heading-->
 # Gezelling Living Booking Page
-![Layout plan](assets/images/bigscreenview.png)
-  ![Layout plan](assets/images/view.png)
+![Layout plan](assets/images/fullscreen.png)
+![Layout plan](assets/images/iPadscreen.png)
+![Layout plan](assets/images/smallscreens.png)
   
 This is the main look for the website. It is designed to be responsive and accessible on mobile and large screen devices. 
 
