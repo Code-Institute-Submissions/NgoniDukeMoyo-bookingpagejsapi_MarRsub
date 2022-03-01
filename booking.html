@@ -2,107 +2,130 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
     <title>Gezellig Living</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-        type="text/css">
+        type="text/css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
-        type="text/css">
-    <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+        type="text/css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
 </head>
 
 <body>
-    <!---bootstrap nav bar--->
     <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
         <a class="navbar-brand" href="index.html">
             <h2 class="nav-heading">Gezellig</h2>
         </a>
-
-
-        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#collapse_target">
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#collapse_target"
+            aria-label="collapse">
             <span class="navbar-toggler-icon"></span>
         </button>
-
-        <div class="collapse navbar-collapse" id="collapse_target">
+        <div class="collapse navbar-collapse" id="collapse_target" aria-label="list items">
             <ul class="nav navbar-nav">
-                <li class="active nav-item uppercase">
-                    <a href="index.html"><span class="span1"><i class="fas fa-house-user span1"></i> Home</span></a>
-
-                </li>
-
                 <li class="nav-item uppercase">
-                    <a href="booking.html"><span class="span2"><i
-                                class="far fa-calendar-alt span2"></i>Bookings</span></a>
+                    <a href="index.html">
+                        <span class="span2"><i class="far fa-calendar-alt span2"></i>Bookings</span>
+                    </a>
                 </li>
+        </div>
 
+        <div class="collapse navbar-collapse" id="collapse_target" aria-label="list items">
+            <ul class="nav navbar-nav">
                 <li class="nav-item uppercase">
-                    <a href="gallery.html"><span class="span3"><i class="far fa-images span3"></i>Gallery</span></a>
+                    <a href="index.html">
+                        <span class="span2"><i class="far fa-calendar-alt span2"></i>Home</span>
+                    </a>
                 </li>
-            </ul>
         </div>
     </nav>
+    
+    <section class="mainpic">
+        <div class="mainpiccontainer row">
+           <!-- <img src="assets/images/mlogo.JPG" alt="livingroom" class="img-fluid col-6 cover-image"
+                aria-label="cover image" /> -->
+            <div class="discriptionsheading tdiv">
 
+                
+               <h1>The Gezellig Living Space</h1>
 
-
-    <!---Page name heading--->
-    <div>
-        <h1 class="homemainhead">Home</h1>
-    </div>
-
-
-
-    <!--- Main page containers for front house image,content, video and map-->
-    <section class="homebodysection">
-        <section class="homeimagesection">
-            <div class="first-section">
-                <img src="assets/images/housefront.JPG" class="house-front" alt="Avatar">
-
-                <!--file card-->
-                <div class="profile">
-                    <img src="assets/images/profile.JPG" alt="profile-name" class="profile-image">
-                    <div class="profile-title">The Owners</div>
-                    <div class="profile-name">Duke & Romy</div>
-                </div>
+                <p class="discriptions">Enjoy the elegance of a by-gone era while staying in this Art Deco home.
+                    Beautifully decorated and featuring a sweeping staircase, original stained-glass windows,
+                    period furniture, and a stunningly unique green and maroon tiled bathroom.<br><br> With a
+                    multi-cultural couple owners, you will indulge in a multi-cultural deco comfort of
+                    both the European and African style interior decoration. Whether you a adventures booker lover, an
+                    art enthusiast, nature love and someone who has an appriciation for authenticity, this space will
+                    make sure that you are well covered.<br><br>Does this space sounds like it is for you? Then book
+                    your time with us below!!!</p>
             </div>
-        </section>
-        <section class="contectsection">
-            <p>Standing at number 6B Staringstraat in Alkmaar, is a simple yet perfectly balanced look and feel of
-                modern and cozy interior design.
-                Those who appriciate a sense of community sitting in the garden or simply living in the moment
-                sorrounded by mesmorising modern art, plants and
-                tranquality that brings nature in the comfort of your own home or for those who love exploration, will
-                be pleased with countless books and souvenirs about traveling to those
-                magical places and living a purposeful and meaningful life.Not only will you be welcomed and accomodated
-                by this magical accomodation, you will also be welcomed by the owners. A incredible couple
-                who's love and personality translate into the place. They are here to make sure you make memorable
-                memories while you are here.
-                <br>
-            </p>
+        </div>
+    </section>
+    
+    <!--bootstrap form-->
+    <section class="bookingbody container">
+        <h1 class="text-white text-center">Book Your Stay</h1>
+        <h3 class="text-white text-center">€100pp</h3>
+    <form action="https://formspree.io/f/xoqynyjn" method="POST" id="my-form">
+        <div class="row">
+          <div class="col">
+              <!--form placeholders first row-->
+              <label>
+            <i class="fas fa-user icons" aria-hidden="true"></i>
+            <input type="text" class="form-control" placeholder="First name"required>
+          </div>
+        
+          <div class="col-6">
+              <label>
+            <i class="fas fa-user icons" aria-hidden="true"></i>
+            <input type="text" class="form-control" placeholder="Last name" required>
+          </div>
+        
+          <!--Second row -->
+          <div class="col-6">
+            <label>
+                <i class="fas fa-mobile-alt icons" aria-hidden="true"></i>
+          <input type="tel" class="form-control" placeholder="Phone number" required>
+        </div>
 
-        </section>
-        <section class="videosection">
-            <div class="videocontainer">
-                <video src="assets/videos/housevideocompressed.mp4" autoplay controls></video>
-            </div>
-            <div>
-                <p><iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2421.327178832718!2d4.734247215694721!3d52.636001735378414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47cf57bbe8a9f3c7%3A0xe11cb9e3358d6490!2sStaringhstraat%2C%201815%20AC%20Alkmaar!5e0!3m2!1sen!2snl!4v1619449940178!5m2!1sen!2snl"
-                        width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe></p>
-            </div>
-        </section>
+        <div class="col-6">
+            <label>
+            <i class="far fa-envelope icons" aria-hidden="true"></i>
+          <input type="email" class="form-control" placeholder="Email" required>
+        </div>
+        
+          <div class="col-6">
+            <label>
+            <i class="far fa-calendar-alt icons" aria-hidden="true"></i>
+            <input type="date" id="start" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31" required>
+            <label>
+                <i class="far fa-calendar-alt icons" aria-hidden="true"></i>
+                <input type="date" id="start" name="trip-start" value="2018-07-22" min="2018-01-01" max="2024-12-31" placeholder="Check In" required>
+            </label>
+          </div>
+        
+          <!--Third row-->
+          <div class="col-6">
+            <label>
+            <i class="fas fa-user icons" aria-hidden="true"></i>
+            <select id="input-group6" style="background-color: #fff;">
+                <option value="">No. of guests</option>
+                <option value="">1-2 persons</option>
+                <option value="">3-5 persons</option>
+                <option value="">6-10 persons</option>
+            </select>
+        </div>
+
+        <button type="submit" class="btn btn-outline-warning" style="margin-left: 15px; margin-bottom: 15px;">Submit</button>
+      </form>
     </section>
 
-    <!--footer-->
+
     <footer class="footernav">
         <div class="main-content">
             <div class="left-box box">
-                <h5>Inside Peak</h5>
+                <h5>Our Community</h5>
                 <div class="content">
-                    <p>Come experience simplicity at its most modern and comfortable state. Nature brought in the
-                        comfort of this living space. An understanding space of both a state of relaxation and
-                        traquality.
-                        Visit our socials to see and read from those who have had the journey with us.</p>
+                    <div id="map"></div>
                     <div id="social">
                         <a href="https://www.facebook.com/" target="_blank" aria-label="link"><span
                                 class="fab fa-facebook"></span></a>
@@ -161,20 +184,23 @@
                 </div>
             </div>
         </div>
-        <!--bottom signature-->
         <div class="bottom">
-            <p id="center-align">
+            <center>
                 <span class="credit">Created By <a href="#">Duke Moyo</a> | </span>
                 <span class="far fa-copyright"></span><span>2021 all rights reserved.</span>
-            </p>
+            </center>
         </div>
     </footer>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDKrXSCmM9KvLRhz5STL3187zLYInobP5Y&callback=initMap&libraries=&v=weekly"
+        async></script>
+    <script src="assets/js/emailjsformspree.js"></script>
+    <script src="assets/js/mapsapi.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-
 </body>
 
 </html>
