@@ -19,7 +19,7 @@ function initMap() {
             lng: 4.73622,
         },
         iconImage: "http://maps.google.com/mapfiles/kml/pal3/icon48.png",
-        infoText: " <a href='https://www.airbnb.com/rooms/29029231?adults=2&check_in=2021-11-17&check_out=2021-12-08&federated_search_id=b6df54fd-c709-46e6-a977-5d050010486c&source_impression_id=p3_1637015701_%2BQ%2FWoWZbXtyBkv0z&guests=1' target='_blank'>Home1</a>",
+        infoText: " <a href='https://www.airbnb.com/rooms/29029231?adults=2&check_in=2021-11-17&check_out=2021-12-08&federated_search_id=b6df54fd-c709-46e6-a977-5d050010486c&source_impression_id=p3_1637015701_%2BQ%2FWoWZbXtyBkv0z&guests=1' target='_blank'>Alkmaar : Apartment in the monumental building</a>",
     },
   
     {
@@ -28,7 +28,7 @@ function initMap() {
             lng: 4.75619,
         },
         iconImage: "http://maps.google.com/mapfiles/kml/pal3/icon48.png",
-        infoText: "<a href=' https://www.airbnb.com/rooms/43871050?adults=2&check_in=2021-11-17&check_out=2021-12-08&federated_search_id=b6df54fd-c709-46e6-a977-5d050010486c&source_impression_id=p3_1637015801_q%2F9xqeYFp%2BnR8Zy9&guests=1' target='_blank'>Home2</a>",
+        infoText: "<a href=' https://www.airbnb.com/rooms/43871050?adults=2&check_in=2021-11-17&check_out=2021-12-08&federated_search_id=b6df54fd-c709-46e6-a977-5d050010486c&source_impression_id=p3_1637015801_q%2F9xqeYFp%2BnR8Zy9&guests=1' target='_blank'>Loft apartment Alkmaar</a>",
     },
   
     {
@@ -37,7 +37,7 @@ function initMap() {
             lng: 4.7408,
         },
         iconImage: "http://maps.google.com/mapfiles/kml/pal3/icon48.png",
-        infoText: "<a href=' https://www.airbnb.com/rooms/31505855?adults=2&check_in=2021-11-17&check_out=2021-12-08&federated_search_id=b6df54fd-c709-46e6-a977-5d050010486c&source_impression_id=p3_1637015838_7S3ZtgMpt8dczqIx&guests=1' target='_blank'>Home3</a>",
+        infoText: "<a href=' https://www.airbnb.com/rooms/31505855?adults=2&check_in=2021-11-17&check_out=2021-12-08&federated_search_id=b6df54fd-c709-46e6-a977-5d050010486c&source_impression_id=p3_1637015838_7S3ZtgMpt8dczqIx&guests=1' target='_blank'>Holiday house on Holyday Park</a>",
     },
   
     {
@@ -46,7 +46,7 @@ function initMap() {
             lng: 4.7638,
         },
         iconImage: "http://maps.google.com/mapfiles/kml/pal3/icon48.png",
-        infoText: "<a href=' https://www.airbnb.com/rooms/13454757?adults=2&check_in=2021-11-17&check_out=2021-12-08&federated_search_id=b6df54fd-c709-46e6-a977-5d050010486c&source_impression_id=p3_1637015884_HDjAb2iFk%2BPRA%2FeX&guests=1' target='_blank'>Home4</a>",
+        infoText: "<a href=' https://www.airbnb.com/rooms/13454757?adults=2&check_in=2021-11-17&check_out=2021-12-08&federated_search_id=b6df54fd-c709-46e6-a977-5d050010486c&source_impression_id=p3_1637015884_HDjAb2iFk%2BPRA%2FeX&guests=1' target='_blank'>House in Alkmaar-Bergen,4 pers.garden,beach,Wifi,</a>",
     },
   
     {
@@ -55,7 +55,7 @@ function initMap() {
             lng: 4.7527,
         },
         iconImage: "http://maps.google.com/mapfiles/kml/pal3/icon48.png",
-        infoText: "<a href=' https://www.airbnb.com/rooms/43563011?adults=2&check_in=2021-11-17&check_out=2021-12-08&federated_search_id=b6df54fd-c709-46e6-a977-5d050010486c&source_impression_id=p3_1637015912_R5KtSt1Q4sONQ1QA&guests=1' target='_blank'>Home5</a>",
+        infoText: "<a href=' https://www.airbnb.com/rooms/43563011?adults=2&check_in=2021-11-17&check_out=2021-12-08&federated_search_id=b6df54fd-c709-46e6-a977-5d050010486c&source_impression_id=p3_1637015912_R5KtSt1Q4sONQ1QA&guests=1' target='_blank'>AlkmaarDeluxe # Netherlands</a>",
     }];
   
     markers.forEach(element=>addMarker(element));
