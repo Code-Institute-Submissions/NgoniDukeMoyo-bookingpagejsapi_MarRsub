@@ -171,6 +171,9 @@ The header and navbar provide clear and simple info to make it as quick and easy
 -Clever Techie(tutorials)<br>
 -Code Institute (Readme file)<br>
 
+<!--Bugs-->
+## Google Maps Cloud Platform
+-Due to updates changes, there was a need to update and enable billing for footer Map to load without console errors (this page connot load google map correctly) 
  
 
 <!--Challenges faced in Project-->
