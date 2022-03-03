@@ -121,6 +121,16 @@ a:link{
 
 }
 
+
+.videocontainer{
+    float: right;
+    width: 500px;
+}
+
+video{
+    width: 100%;
+}
+
 /*------------------footer*/
 
 .footernav {
