@@ -126,9 +126,17 @@ The header and navbar provide clear and simple info to make it as quick and easy
 # Browser Testing
 1. Chrome Version 95.0.4638.69 (Official Build) (x86_64)
 
+# Manual Testing
+Home. In manual testing, test cases are executed by a human tester and software. Test trial was exicuted by a test user to test the fucntionality of the navigationg bar excutions for response to clicking and hovering, the response from the video sound and response to clicking events, the google maps respones to adjustments and event clicking events. The functionality of the links embeded in the map. The functionality of the form for responses to the submission form and submit button. Ability to click and view social icons with ease and being able to return to the main page easily.
+
+Booking. Test trial was on the rospense of the form once submited for redirection and notification after submition. Functionality of manipulating the form easily to book. Easy and clear navigation navigation. 
+
+# Automated Testing
+Automation Testing uses automation tools to execute test cases. Testing done through chrome developer inspecting tools. Testing for console errors for js code, map api and code. Through this testing, i was able to fix functionality bugs to especially make the sight fully functional ffrom developer side.
+
 
 # Bugs
--Devices view<br>
+-Small Devices view<br>
 
 
 # Deployment

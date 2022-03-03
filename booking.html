@@ -10,6 +10,25 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
         type="text/css" />
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+   <!---test-->
+    <script>
+        function thunderEffect(){
+            alert("Are you sure you want to submit this form");
+            $(".ext-1").fadeIn(1500).fadeOut(250, function(){
+        
+                $(this).css("background-color", "rgba(255, 255, 255, .7)");
+        
+                document.getElementById("au001").play();
+        
+                $(this).fadeIn(250).fadeOut(2000, function(){
+        
+                    $(this).css("background-color", "rgba(0, 0, 0, .4)");                    
+                });                
+            });
+            alert("Form Submited. Thanks!");
+        }
+        </script>
+
 </head>
 
 <body>
@@ -65,8 +84,8 @@
     <section class="bookingbody container">
         <h1 class="text-white text-center">Book Your Stay</h1>
         <h3 class="text-white text-center">€100pp</h3>
-    <form action="https://formspree.io/f/xoqynyjn" method="POST" id="my-form">
-        <div class="row">
+    <form action="foo.htm https://formspree.io/f/xvodbqgg" onsubmit="thunderEffect()" method="POST" id="my-form">
+        <div class="form-row">
           <div class="col">
               <!--form placeholders first row-->
               <label>
@@ -74,6 +93,7 @@
             <input type="text" class="form-control" placeholder="First name"required>
           </div>
         
+          
           <div class="col-6">
               <label>
             <i class="fas fa-user icons" aria-hidden="true"></i>
@@ -191,6 +211,7 @@
             </center>
         </div>
     </footer>
+    
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
     <script
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDKrXSCmM9KvLRhz5STL3187zLYInobP5Y&callback=initMap&libraries=&v=weekly"
