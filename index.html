@@ -57,8 +57,8 @@
                 </div>
             </div>
         </section>
-        <section class="contectsection">
-            <p>Standing at number 6B Staringstraat in Alkmaar, is a simple yet perfectly balanced look and feel of
+        <section class="container-fluid">
+            <p class="discriptions">Standing at number 6B Staringstraat in Alkmaar, is a simple yet perfectly balanced look and feel of
                 modern and cozy interior design.
                 Those who appriciate a sense of community sitting in the garden or simply living in the moment
                 sorrounded by mesmorising modern art, plants and
@@ -72,22 +72,22 @@
             </p>
 
         </section>
-        <section class="videosection">
-            <div class="videocontainer">
-                <video src="assets/video/housevideocompressed.mp4" autoplay controls></video>
+        <section class="videosection container-fluid">
+            <div class="col">
+                <video src="assets/video/housevideocompressed.mp4" height="300" autoplay controls></video>
             </div>
-            <div class="map-responsive">
-                <p><iframe
+            <div class="col">
+                <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2421.327178832718!2d4.734247215694721!3d52.636001735378414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47cf57bbe8a9f3c7%3A0xe11cb9e3358d6490!2sStaringhstraat%2C%201815%20AC%20Alkmaar!5e0!3m2!1sen!2snl!4v1619449940178!5m2!1sen!2snl"
-                        width="400" height="200" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" loading="lazy"></iframe></p>
+                        width="100%" height="300" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" loading="lazy"></iframe>
             </div>
         </section>
     </section>
 
     <!--footer-->
-    <footer class="footernav">
-        <div class="main-content">
-            <div class="left-box box">
+    <footer class="footernav container-fluid">
+        <div class="main-content row">
+            <div class="col box">
                 <h5>Our Community</h5>
                 <div class="content">
                     <div id="map"></div>
@@ -101,7 +101,7 @@
                     </div>
                 </div>
             </div>
-            <div class="center-box box">
+            <div class="col box">
                 <h5>Address</h5>
                 <div class="content">
                     <div class="place">
@@ -118,11 +118,10 @@
                     </div>
                 </div>
             </div>
-
-            <div class="right-box box">
+            <div class="col box">
                 <h5>Reach to us</h5>
                 <div class="content">
-                    <form action="https://formspree.io/f/xvodbqgg" method="POST" id="my-form">
+                    <form action="" method="POST" id="booking-form">
                         <label>Name
                             <input type="text" id="first_Name" name="first_Name" required />
                         </label>
@@ -130,20 +129,19 @@
                             <input type="email" id="email_Address" name="email_Address" required />
                         </label>
                         <div class="msg">
-                           
-                            <label>Message
+                        <label>Message
                                 <textarea name="message" id="message" rows="2" cols="30" required></textarea>
                             </label>
                         </div>
-                        <div class="btn">
+                        <div class="btn button">
                             <button type="submit" aria-label="button">send</button>
-                            <!--<div id="status"></div>-->
+                            <div id="status"></div>
                         </div>
                     </form>
                 </div>
             </div>
         </div>
-        <div class="bottom">
+        <div class="bottom container-fluid">
             <center>
                 <span class="credit">Created By <a href="#">Duke Moyo</a> | </span>
                 <span class="far fa-copyright"></span><span>2021 all rights reserved.</span>

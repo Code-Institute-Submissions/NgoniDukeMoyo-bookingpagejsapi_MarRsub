@@ -96,15 +96,10 @@ a:link{
     color: #000;
 }
 .map-responsive{
-
     overflow:hidden;
-
     padding-bottom:56.25%;
-
     position:relative;
-
     height:0;
-
 }
 
 .map-responsive iframe{
