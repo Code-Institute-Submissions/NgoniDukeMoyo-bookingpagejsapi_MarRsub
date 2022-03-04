@@ -1,4 +1,4 @@
-var form = document.getElementById("my-form");
+var form = document.getElementById("booking-form");
     
 async function handleSubmit(event) {
   event.preventDefault();

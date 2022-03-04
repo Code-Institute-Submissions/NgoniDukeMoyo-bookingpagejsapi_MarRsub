@@ -10,23 +10,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
         type="text/css" />
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
-   <!---test-->
+   <!---Script to handle booking form submission alert-->
     <script>
         function thunderEffect(){
             alert("Are you sure you want to submit this form");
-            $(".ext-1").fadeIn(1500).fadeOut(250, function(){
-        
-                $(this).css("background-color", "rgba(255, 255, 255, .7)");
-        
-                document.getElementById("au001").play();
-        
-                $(this).fadeIn(250).fadeOut(2000, function(){
-        
-                    $(this).css("background-color", "rgba(0, 0, 0, .4)");                    
-                });                
-            });
             alert("Form Submited. Thanks!");
+            $("#booking-form")[0].reset();
         }
+        document.getElementById("input-group6").selectedIndex = -1;
         </script>
 
 </head>
@@ -79,10 +70,10 @@
     </section>
     
     <!--bootstrap form-->
-    <section class="bookingbody container">
+    <section class="bookingbody container-fluid">
         <h1 class="text-white text-center">Book Your Stay</h1>
         <h3 class="text-white text-center">€100pp</h3>
-    <form action="foo.htm https://formspree.io/f/xvodbqgg" onsubmit="thunderEffect()" method="POST" id="my-form">
+    <form action="" onsubmit="thunderEffect()" method="" id="booking-from">
         <div class="form-row">
           <div class="col">
               <!--form placeholders first row-->
@@ -114,10 +105,10 @@
           <div class="col-6">
             <label>
             <i class="far fa-calendar-alt icons" aria-hidden="true"></i>
-            <input type="date" id="start" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31" required>
+            <input type="date" id="start" name="trip-start"  min="2018-01-01" max="2018-12-31" required>
             <label>
                 <i class="far fa-calendar-alt icons" aria-hidden="true"></i>
-                <input type="date" id="start" name="trip-start" value="2018-07-22" min="2018-01-01" max="2024-12-31" placeholder="Check In" required>
+                <input type="date" id="end" name="end-start"  min="2018-01-01" max="2024-12-31" placeholder="Check In" required>
             </label>
           </div>
         
@@ -125,7 +116,7 @@
           <div class="col-6">
             <label>
             <i class="fas fa-user icons" aria-hidden="true"></i>
-            <select id="input-group6" style="background-color: #fff;">
+            <select  id="input-group6" style="background-color: #fff;" required>
                 <option value="">No. of guests</option>
                 <option value="">1-2 persons</option>
                 <option value="">3-5 persons</option>
@@ -138,9 +129,9 @@
     </section>
 
 
-    <footer class="footernav">
-        <div class="main-content">
-            <div class="left-box box">
+    <footer class="footernav container-fluid">
+        <div class="main-content row">
+            <div class="col">
                 <h5>Our Community</h5>
                 <div class="content">
                     <div id="map"></div>
@@ -154,7 +145,7 @@
                     </div>
                 </div>
             </div>
-            <div class="center-box box">
+            <div class="col">
                 <h5>Address</h5>
                 <div class="content">
                     <div class="place">
@@ -171,10 +162,10 @@
                     </div>
                 </div>
             </div>
-            <div class="right-box box">
+            <div class="col">
                 <h5>Reach to us</h5>
                 <div class="content">
-                    <form action="https://formspree.io/f/xvodbqgg" method="POST" id="my-form">
+                    <form action="" method="POST" id="booking-form">
                         <label>Name
                             <input type="text" id="first_Name" name="first_Name" required />
                         </label>
@@ -186,9 +177,9 @@
                                 <textarea name="message" id="message" rows="2" cols="30" required></textarea>
                             </label>
                         </div>
-                        <div class="btn">
+                        <div class="btn button">
                             <button type="submit" aria-label="button">send</button>
-                            <!--<div id="status"></div>-->
+                            <div id="status"></div>
                         </div>
                     </form>
                 </div>

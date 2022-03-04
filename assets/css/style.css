@@ -188,6 +188,9 @@ video{
 .box .content p{
     text-align: justify;
 }
+.col{
+    margin-top: 10px;
+}
 
 #social{
     margin: 10px 0 0 0;
