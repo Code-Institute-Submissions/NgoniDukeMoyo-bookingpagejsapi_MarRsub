@@ -10,16 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
         type="text/css" />
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
-   <!---Script to handle booking form submission alert-->
-    <script>
-        function thunderEffect(){
-            alert("Are you sure you want to submit this form");
-            alert("Form Submited. Thanks!");
-            $("#booking-form")[0].reset();
-        }
-        document.getElementById("input-group6").selectedIndex = -1;
-        </script>
-
+   
 </head>
 
 <body>
@@ -75,44 +66,49 @@
     <section class="bookingbody container-fluid">
         <h1 class="text-white text-center">Book Your Stay</h1>
         <h3 class="text-white text-center">€100pp</h3>
-    <form action="" onsubmit="thunderEffect()" method="" id="booking-from">
+    <form action="https://formspree.io/f/xoqynyjn" onsubmit="thunderEffect()" method="POST" id="booking-from">
         <div class="form-row">
           <div class="col">
               <!--form placeholders first row-->
-              <label>
+            <label>
             <i class="fas fa-user icons" aria-hidden="true"></i>
-            <input type="text" class="form-control" placeholder="First name"required>
+            <input type="text" class="form-control" placeholder="FirstName" required>
+            </label>
           </div>
         
           
           <div class="col-6">
-              <label>
+            <label>
             <i class="fas fa-user icons" aria-hidden="true"></i>
-            <input type="text" class="form-control" placeholder="Last name" required>
+            <input type="text" class="form-control" placeholder="LastName" required>
+            </label>
           </div>
         
           <!--Second row -->
           <div class="col-6">
             <label>
                 <i class="fas fa-mobile-alt icons" aria-hidden="true"></i>
-          <input type="tel" class="form-control" placeholder="Phone number" required>
+          <input type="tel" class="form-control" placeholder="PhoneNumber" required>
+            </label>
         </div>
 
         <div class="col-6">
             <label>
             <i class="far fa-envelope icons" aria-hidden="true"></i>
           <input type="email" class="form-control" placeholder="Email" required>
+            </label>
         </div>
         
-          <div class="col-6">
+        <div class="col-6">
             <label>
             <i class="far fa-calendar-alt icons" aria-hidden="true"></i>
             <input type="date" id="start" name="trip-start"  min="2018-01-01" max="2018-12-31" required>
+            </label>
             <label>
                 <i class="far fa-calendar-alt icons" aria-hidden="true"></i>
-                <input type="date" id="end" name="end-start"  min="2018-01-01" max="2024-12-31" placeholder="Check In" required>
+                <input type="date" id="end" name="end-start"  min="2018-01-01" max="2024-12-31" required>
             </label>
-          </div>
+        </div>
         
           <!--Third row-->
           <div class="col-6">
@@ -124,10 +120,11 @@
                 <option value="">3-5 persons</option>
                 <option value="">6-10 persons</option>
             </select>
+            </label>
         </div>
-
         <button type="submit" class="btn btn-outline-warning" style="margin-left: 15px; margin-bottom: 15px;">Submit</button>
-      </form>
+        </div>
+    </form>
     </section>
 
 
@@ -167,7 +164,7 @@
             <div class="col box">
                 <h5>Reach to us</h5>
                 <div class="content">
-                    <form action="" method="POST" id="booking-form">
+                    <form action="https://formspree.io/f/xoqynyjn" method="POST" id="booking-form">
                         <label>Name
                             <input type="text" id="first_Name" name="first_Name" required />
                         </label>
@@ -201,6 +198,7 @@
         async></script>
     <script src="assets/js/emailjsformspree.js"></script>
     <script src="assets/js/mapsapi.js"></script>
+    <script src="assets/js/bookingformhandler.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
     </script>

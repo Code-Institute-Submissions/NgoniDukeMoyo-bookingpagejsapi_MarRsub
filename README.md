@@ -73,12 +73,12 @@ The header and navbar provide clear and simple info to make it as quick and easy
 -W3C CSS Validator : <br>
 -google chrome dev tool - lighthouse<br>
 -Code Formatter
-![Layout plan](assets/images/htmlvalidator.png)
-  ![Layout plan](assets/images/cssvalidator.png)
-  ![Layout plan](assets/images/jsvalidator.png)
-  ![Layout plan](assets/images/jsvalidator2.png)
-  ![Layout plan](assets/images/csswebformatter.png)
-  ![Layout plan](assets/images/htmlwebformatter.png)
+![Layout plan](assets/images/indexvalidator.png)
+![Layout plan](assets/images/bookingvalidator.png)
+  ![Layout plan](assets/images/validator1.png)
+  ![Layout plan](assets/images/validator2.png)
+  ![Layout plan](assets/images/validator3.png)
+  
 
 # Testing User Stories from User Experience
 ## First time visitor Goals
