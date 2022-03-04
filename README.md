@@ -1,8 +1,7 @@
 <!--Heading-->
 # Gezelling Living Booking Page
-![Layout plan](assets/images/fullscreen.png)
-![Layout plan](assets/images/iPadscreen.png)
-![Layout plan](assets/images/smallscreens.png)
+![Layout plan](assets/images/bigscreens.png)
+![Layout plan](assets/images/smallerscreens.png)
   
 This is the main look for the website. It is designed to be responsive and accessible on mobile and large screen devices. 
 
@@ -127,12 +126,12 @@ The header and navbar provide clear and simple info to make it as quick and easy
 1. Chrome Version 95.0.4638.69 (Official Build) (x86_64)
 
 # Manual Testing
-Home. In manual testing, test cases are executed by a human tester and software. Test trial was exicuted by a test user to test the fucntionality of the navigationg bar excutions for response to clicking and hovering, the response from the video sound and response to clicking events, the google maps respones to adjustments and event clicking events. The functionality of the links embeded in the map. The functionality of the form for responses to the submission form and submit button. Ability to click and view social icons with ease and being able to return to the main page easily.
+Home. In manual testing, test cases are executed by a human tester and software : using mainly google chrome dev tools. Test trial was exicuted by a test user to test the fucntionality of the navigationg bar excutions for response to clicking and hovering, the response from the video sound and response to clicking events, the google maps respones to adjustments and event clicking events. The functionality of the links embeded in the map. The functionality of the form for responses to the submission form and submit button. Ability to click and view social icons with ease and being able to return to the main page easily.
 
 Booking. Test trial was on the rospense of the form once submited for redirection and notification after submition. Functionality of manipulating the form easily to book. Easy and clear navigation navigation. 
 
 # Automated Testing
-![Layout plan](assets/images/indexautotest.png.png)
+![Layout plan](assets/images/indexautotest.png)
 ![Layout plan](assets/images/bookingpageautotest.png)
 Automation Testing used selenium IED for automation testing. 
 
