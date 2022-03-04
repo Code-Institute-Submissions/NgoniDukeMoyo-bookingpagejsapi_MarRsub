@@ -9,7 +9,7 @@ async function handleSubmit(event) {
     body: data,
     headers: {
         'Accept': 'application/json'
-    }
+    } 
   }).then(response => {
     status.innerHTML = "Thanks for your submission!";
     form.reset()
