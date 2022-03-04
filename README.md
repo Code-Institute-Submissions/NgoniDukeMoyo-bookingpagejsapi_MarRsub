@@ -132,7 +132,9 @@ Home. In manual testing, test cases are executed by a human tester and software.
 Booking. Test trial was on the rospense of the form once submited for redirection and notification after submition. Functionality of manipulating the form easily to book. Easy and clear navigation navigation. 
 
 # Automated Testing
-Automation Testing uses automation tools to execute test cases. Testing done through chrome developer inspecting tools. Testing for console errors for js code, map api and code. Through this testing, i was able to fix functionality bugs to especially make the sight fully functional ffrom developer side.
+![Layout plan](assets/images/indexautotest.png.png)
+![Layout plan](assets/images/bookingpageautotest.png)
+Automation Testing used selenium IED for automation testing. 
 
 
 # Bugs
